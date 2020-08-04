@@ -1,0 +1,98 @@
+<!--
+----------1---------2---------3--------4---------5---------6---------7--
+-->
+
+<!DOCTYPE html>
+<html lang="de">
+   <head>
+     <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage von Georg Maubach</title>
+
+    <style type="text/css">
+
+    <!-- Im Style-Tag kann ich fuer jedes Tag, das ich im Body verwenden will,
+    einen Style definieren.
+
+    Gibt es von einem Tag mehrere Formatvarianten kann ich verschiedene Klassen
+    definieren. Der Klassenname ist frei definierbar und wird mit "." hinter
+    den Tag geschrieben.
+
+    Klassen werden mit dem Keyword "class" im aufrufenden Tag angesprochen.
+    -->
+
+    h1 {
+    color:orange;
+    text-align:center;
+    }
+
+    p {
+    color:#FF00FF;
+    font-size:24pt;
+    font-family:Arial;
+    }
+
+    p.rot {
+    color:#FF0000;
+    font-size:24pt;
+    font-family:Arial;
+    }
+
+    p.blau {
+    color:#0000FF;
+    font-size:24pt;
+    font-family:Arial;
+    }
+
+    div {
+    color:red;
+    font-size:18pt;
+    font-family:Calibri light;
+    }
+
+    span {
+    color:green;
+    font-size:10pt;
+    font-family:Verdana;
+    }
+
+    </style>
+
+   </head>
+   <body>
+   <h1 align="center">Herzlich Willkommen !</h1>
+
+   <!--Einmal Umlauttest--> Textk&ouml;rper<br />
+
+   <p>Dies ist Georg Maubach's Homepage</p>
+   <p class=blau>Dies ist Georg Maubach's Homepage</p>
+   <p class=rot>Dies ist <span>Georg Maubach's</span> Homepage</p>
+
+   <!-- p = Paragraph erzeugt einen Absatz. Ein Absatz wird immer von einer Leerzeile begleitet.
+   -->
+
+
+   <div style="color:red;font-size:18pt;font-family:Calibri light">
+   Dies ist Georg Maubach's Homepage<br />
+   Dies ist <span style="color:green;font-size:10pt;font-family:Verdana">Georg Maubach's</span> Homepage<br />
+   Dies ist Georg Maubach's Homepage<br />
+   </div>
+
+   <!-- Der div-Container fasst Formatierungen für alle im Container enthaltenen
+   Anweisungen zusammen, so dass die Formatierungsanweisungen nur einmal für
+   alle folgenden Zeilen angegeben werden muessen.
+   -->
+
+   <!-- Der span-Tag wird verwendet, wenn ich eine AUSNAHME von der allgemeine Regel
+   fuer die Formatierung angeben. Der span-Tag ist immer eine AUSNAHME von dem,
+   was sonst gilt.
+   -->
+
+   <!-- MERKE: CSS-Style Anweisungen muessen im in der Form Key:Value angegeben werden.
+   Wird versehentlich statt ":" ein "=" gesetzt, wird der Ausdruck fuer den Browser
+   komplett ungueltig und er uebernimmt die vorher angegebene und bekannte Formatierung.
+   -->
+
+   </body>
+</html>
