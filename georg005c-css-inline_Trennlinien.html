@@ -15,23 +15,17 @@
 
    Textk&ouml;rper<br />
 
-   <hr noshade size="4" width="80%"/>
-   <!--
-   noshade = keine Schattierung der Linie
-   size = Angabe in Pixel auf der Seite
-   width = als absolute Zahlenangabe = Pixel auf der Seite
-           als Prozentangabe = Anteil auf der Seite, wobei die Linie zentriert dargestellt wird
-   Merke:
-     Farben kann man mit HTML-Linien nicht definieren.
-     Selbst wenn ein Browser eine Farbe über ein color-Attribut anzeigen sollte,
-     ist das eine Ausnahme des Browsers und ausserdem kein korrektes HTML.
-   -->
+   <hr style="width:95%;height:5px;color:blue;background:#dfac20;" />
 
    Dies ist <font size="4" color="red">Georg Maubach's</font> Homepage<br />
    Dies ist <font size="3" color="blue">Georg Maubach's</font> Homepage<br />
    Dies ist <font size="2" color="#FF7F00">Georg Maubach's</font> Homepage<br />
 
-   <hr noshade size="4" width="80%"/>
+   <hr />
+   <!-- hr-Tag ohne Style = Standard
+   Der definierte Style fuer die erste Linie wird hier nicht uebernommen,
+   weil er nur fuer die erste Linie gilt.
+   -->
 
    <ol start="5">
       <li>Computer-Club</li>
@@ -48,8 +42,7 @@
    </ul>
    <!-- ul = unordered list mit Bullet Point -->
 
-   <hr size="4" width="80%"/> 
-   <hr shade size="4" width="80%"/>
+   <hr />
 
    </body>
 </html>

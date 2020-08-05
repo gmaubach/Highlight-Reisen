@@ -1,0 +1,102 @@
+<!--
+----------1---------2---------3--------4---------5---------6---------7--
+-->
+
+<!DOCTYPE html>
+<html lang="de">
+   <head>
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Homepage von Georg Maubach</title>
+   </head>
+
+   <body>
+   <h1 align="center">Herzlich Willkommen !</h1>
+
+   <hr noshade size="4" width="80%"/>
+
+   <a name="navi"></a>Zu meinen ...
+   <!--
+   Das a-Tag ist ein Container, der mit einem schliessenden Tag geschlossen
+   werden muss.
+
+   Das a-Tag (Anker-Tag) benötigt für eine interne Referenz kein href-Attribut,
+   sondern ein name-Attribut.
+
+   Mit dem name-Attribut wird eine Sprungmarke definiert.
+
+   Der Name der Sprungmarke im name-Attribut kann frei gewählt werden.
+   Hier sind Buchstaben und Zahlen erlaubt.
+
+   Es ist erlaubt den Text "Zu meinen ..." in den a-Tag Container oder dahinter
+   geschrieben werden.
+   -->
+   <a href="#01">Lieblingsfarben</a>
+   <a href="#02">Hobbies</a>
+   <a href="#03">Links</a>
+   <!--
+   Die Bereiche, zu denen gesprungen werden soll, muessen mit einem href-Attribut
+   gekennzeichnet werden.
+
+   Im href-Attribut wird der Name der Sprungadresse, die im a-Tag mit dem
+   name-Attribut definiert wurde, genannt. Der Name der Sprung-Adresse muss mit
+   einem Raute-Zeichen "#" eingeleitet werden.
+   -->
+
+   <hr noshade size="4" width="80%"/>
+
+   Textk&ouml;rper<br />
+   Dies ist <font size="4" color="red">Georg Maubach's</font> Homepage<br />
+   Dies ist <font size="3" color="blue">Georg Maubach's</font> Homepage<br />
+   Dies ist <font size="2" color="#FF7F00">Georg Maubach's</font> Homepage<br />
+
+   <hr noshade size="4" width="80%"/>
+
+   <a name="01">
+   <h2>Lieblingsfarben</h2>
+   </a>
+   <!--
+   Das a-Tag enthaelt hier mit dem name-Attribut die Sprungadresse "01",
+   die aus der obigen Navigationszeile erreichbar ist.
+   -->
+   <ol>
+   <li>rot</li>
+   <li>orange</li>
+   <li>blau</li>
+   </ol>
+   <a href="#navi">nach oben</a>
+   <!--
+   Um zur Navigationszeile zurückzuspringen, referenziere ich das a-Tag,
+   dass ich vor der Naviagtionszeile mit dem name-Attribut-Wert "navi"
+   bezeichnet habe.
+   -->
+
+   <hr noshade size="4" width="80%"/>
+
+   <a name="02">
+   <h2>Hobbies</h2>
+   </a>
+   <ol start="5">
+      <li>Computer-Club</li>
+      <li>Chinesisch</li>
+      <li>Radfahren</li>
+   </ol>
+   <a href="#navi">nach oben</a>
+
+   <hr noshade size="4" width="80%"/>
+
+
+   <a name="03">
+   <h2>Links</h2>
+   </a>
+   <ul type="square">
+      <li><a target="_blank" href="http://www.trolug.de">Computer-Club</a></li>
+      <li><a target="_blank" href="https://www.vhs-bonn.de/programm/fremdsprachen.html?action%5B145%5D=category&cat_ID=484-CAT-KAT256#cnt">Chinesisch</a></li>
+      <li><a target="_blank" href="https://de.wikipedia.org/wiki/Radsport">Radfahren</a></li>
+   </ul>
+   <a href="#navi">nach oben</a>
+
+   <hr noshade size="4" width="80%"/>
+
+   </body>
+</html>
